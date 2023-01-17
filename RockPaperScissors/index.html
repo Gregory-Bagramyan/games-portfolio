@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="module" src="app.js"></script>
+    <script type="module" src="db.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockRockRock</title>
+  </head>
+  <body>
+    <div>
+      <ul class="languages">
+        <li class="english">ENG</li>
+        <li class="french">FR</li>
+      </ul>
+    </div>
+    <h1>Choose your weapon</h1>
+    <ul class="player-selection">
+      <li class="rock green-background blue-hover">Rock</li>
+      <li class="paper green-background blue-hover">Paper</li>
+      <li class="scissors green-background blue-hover">Scissors</li>
+    </ul>
+    <div class="display-choices">
+      <div class="player-choice-display"></div>
+      <div class="robot-choice-display"></div>
+    </div>
+    <div class="display-end-game-sentence-box">
+      <div></div>
+    </div>
+    <div class="display-scores-box">
+      <div class="display-player-score"></div>
+      <div class="display-robot-score"></div>
+    </div>
+    <div class="display-total-score-box">
+      <div class="display-player-total-score"></div>
+    </div>
+    <div class="save-score">
+      <div id="enterDetails">
+        <h2 class="game-over">Game Over</h2>
+        <h4 class="player-name">Enter Player Name</h4>
+        <div class="enter-player-name-box">
+          <input class="enter-player-name" id="enterName" type="text" />
+        </div>
+        <div class="save-player-name-button-box">
+          <button class="save-player-name-button" id="insert">
+            Save Score
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="highest-scores-display">
+      <div>
+        <h2 class="highest-score-title">Highest Scores</h2>
+        <div class="save-player-name-button-box">
+          <button class="play-again">Play again</button>
+        </div>
+      </div>
+      <!-- <div id="findrDetails">
+        <h2>Find Details</h2>
+        <h4>Player Name</h4>
+        <input id="findName" type="text" />
+        <button id="find">FIND</button>
+        <h4 id="findScore" type="text"></h4>
+      </div> -->
+    </div>
+  </body>
+</html>

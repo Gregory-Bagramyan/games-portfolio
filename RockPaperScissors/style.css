@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-color: rgb(233, 174, 129);
+  font-size: 16px;
+}
+
+.languages {
+  display: flex;
+  gap: 1%;
+}
+
+.languages li {
+  width: 15%;
+  border: solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(121, 169, 252);
+  border-radius: 10%;
+}
+
+h1 {
+  font-size: 1.55rem;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+td {
+  justify-content: center;
+}
+
+.player-selection {
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  gap: 3%;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.player-selection li {
+  width: 25%;
+  border: solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(176, 252, 121); */
+  border-radius: 25% 10%;
+}
+
+/* .player-selection li:hover {
+  background-color: rgb(117, 180, 235);
+} */
+
+.green-background {
+  background-color: rgb(176, 252, 121);
+}
+
+.blue-background {
+  background-color: rgb(117, 180, 235);
+}
+
+.grey-background {
+  background-color: grey;
+}
+
+.blue-hover:hover {
+  background-color: rgb(117, 180, 235);
+}
+
+.display-choices {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  background-color: blanchedalmond;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.display-choices div {
+  border: solid 2px;
+  width: 25%;
+  border-radius: 7%;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-choices div:empty {
+  display: None;
+}
+
+.player-choice-display {
+  display: flex;
+  background-color: rgb(255, 127, 240);
+}
+
+.robot-choice-display {
+  display: flex;
+  background-color: rgb(131, 144, 231);
+}
+
+.display-end-game-sentence-box {
+  background: rgb(186, 236, 150);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.display-end-game-sentence-box div:empty {
+  display: None;
+}
+
+.display-end-game-sentence-box div {
+  display: flex;
+  background: rgb(236, 150, 150);
+  border: solid 2px;
+  /* width: 33%; */
+  flex: 0.3 0 33%;
+  border-radius: 7%;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-scores-box {
+  background: rgb(211, 134, 255);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin-bottom: 16px;
+  gap: 3%;
+}
+
+.display-scores-box div:empty {
+  display: None;
+}
+
+.display-scores-box div {
+  display: flex;
+  background: rgb(149, 248, 119);
+  border: solid 2px;
+  width: 33%;
+  border-radius: 7%;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-total-score-box {
+  background: rgb(154, 218, 236);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin-bottom: 16px;
+  gap: 3%;
+}
+
+.display-total-score-box div:empty {
+  display: None;
+}
+
+.display-total-score-box div {
+  display: flex;
+  background: rgb(149, 248, 119);
+  border: solid 2px;
+  width: 33%;
+  border-radius: 7%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.save-score,
+.highest-scores-display {
+  display: flex;
+  background-color: blueviolet;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 27%;
+  left: 8.5%;
+  transform: translate(7.3%, -20%);
+  justify-content: center;
+  border-radius: 7%;
+  visibility: hidden;
+}
+
+.open-pop-up {
+  visibility: visible;
+  /* top: 27%;
+  transform: translate(7.3%, -20%) scale(1); */
+}
+
+.game-over,
+.player-name,
+.enter-player-name-box,
+.save-player-name-button-box,
+.highest-score-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.game-over,
+.highest-score-title {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  font-size: 2.5rem;
+}
+
+.highest-score-title {
+  font-size: 2.2rem;
+}
+
+#tbody {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#table-box {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 580px) {
+  .languages {
+    gap: 0.5%;
+  }
+
+  .languages li {
+    width: 5%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .player-selection {
+    height: 100px;
+  }
+
+  .player-selection li {
+    width: 10%;
+  }
+
+  .display-choices {
+    height: 100px;
+  }
+
+  .display-choices div {
+    width: 10%;
+  }
+
+  .display-end-game-sentence-box {
+    height: 100px;
+  }
+
+  .display-end-game-sentence-box div {
+    flex: 0.15 0 10%;
+  }
+  .display-scores-box {
+    height: 100px;
+  }
+
+  .display-scores-box div {
+    width: 15%;
+  }
+
+  .display-total-score-box {
+    height: 100px;
+  }
+
+  .display-total-score-box div {
+    width: 15%;
+  }
+
+  .save-score,
+  .highest-scores-display {
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    border-radius: 7%;
+  }
+}
