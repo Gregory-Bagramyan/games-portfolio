@@ -15,13 +15,41 @@ body {
   font-size: 16px;
 }
 
+.navbar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back {
+  padding: 1%;
+  margin: 1%;
+  border: solid;
+  cursor: pointer;
+  align-items: center;
+  background-color: rgb(121, 169, 252);
+  border-radius: 10%;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+.back-link {
+  text-decoration: none;
+}
+
 .languages {
+  width: 25%;
   display: flex;
   gap: 1%;
+  margin: 1%;
+  justify-content: space-between;
 }
 
 .languages li {
-  width: 15%;
+  width: 50%;
   border: solid;
   cursor: pointer;
   display: flex;
@@ -242,8 +270,12 @@ td {
     gap: 0.5%;
   }
 
+  .languages {
+    width: 11.5%;
+  }
+
   .languages li {
-    width: 5%;
+    width: 45%;
   }
 
   h1 {
