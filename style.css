@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: aqua;
+  height: 25px;
+  /* margin-bottom: 10px; */
+}
+
+.presentation {
+  background-color: lightblue;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.games-list-box {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+a:link,
+a:visited {
+  color: rgb(232, 235, 238);
+}
+
+.games-list {
+  background-color: beige;
+  width: 100%;
+}
+
+.games-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  padding: 10px 5px;
+  border: solid 1px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  background-color: rgb(148, 144, 144);
+  color: aliceblue;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgb(112, 108, 108);
+}
+.games-list li a {
+  text-decoration: none;
+}
